@@ -3,23 +3,19 @@
 **Tarea 3: Introducción a Tkinter**  
 **IA04 - Razonamiento Artificial**  
 **Universidad Creativa de Costa Rica**
+**Profesor: Angelo Ortiz Vega**
+**Alumno: Dave Villalta Z**
+**Repositorio: https://github.com/davevz77/tarea3-tkinter-ia04**
 
 ---
 
 ## 📝 Descripción
 
-Sistema de gestión de estudiantes con interfaz gráfica moderna desarrollado en Python con Tkinter. Implementa un flujo completo de registro, inicio de sesión y acceso a pantalla principal con persistencia de datos en formato JSON.
+Sistema de gestión de estudiantes con interfaz gráfica moderna desarrollado en Python con Tkinter. Contiene  un flujo completo de registro, inicio de sesión y acceso a pantalla principal con persistencia de datos en formato JSON.
 
 ---
 
-## 👥 Autores
 
-- **[Tu Nombre Aquí]**
-- **[Nombre del Compañero 2]** *(si aplica)*
-- **[Nombre del Compañero 3]** *(si aplica)*
-
-**Profesor:** Angelo Ortiz Vega  
-**Fecha de Entrega:** 13 de Octubre, 2025
 
 ---
 
@@ -55,7 +51,7 @@ Sistema de gestión de estudiantes con interfaz gráfica moderna desarrollado en
 
 ## 🛠️ Tecnologías Utilizadas
 
-- **Python 3.8+**
+- **Python 3.13+**
 - **Tkinter** - Interfaz gráfica
 - **JSON** - Persistencia de datos
 - **Pillow** - Manejo de imágenes
@@ -90,7 +86,7 @@ python -m venv tarea3
 tarea3\Scripts\activate
 ```
 
-**macOS/Linux:**
+**Windows 11 + Visual Studio:**
 ```bash
 source tarea3/bin/activate
 ```
@@ -128,14 +124,14 @@ python src/main.py
 
 #### 2️⃣ **Inicio de Sesión**
 
-1. Ingresa tu correo electrónico
-2. Ingresa tu contraseña
-3. Haz clic en **"Iniciar Sesión"**
-4. Serás redirigido a la pantalla principal
+1. Ingresar correo electrónico
+2. Ingresar  contraseña
+3. Hacer clic en **"Iniciar Sesión"**
+4. Se va a  rediregir a la pantalla principal
 
 #### 3️⃣ **Pantalla Principal**
 
-- Visualiza tu información de bienvenida
+- Visualizar información de bienvenida
 - Explora las tarjetas con información
 - Usa el botón **"Cerrar Sesión"** para salir
 
@@ -177,6 +173,7 @@ El diseño de la interfaz está inspirado en aplicaciones modernas con:
 - **Tarjetas informativas** - En la pantalla principal
 - **Efectos hover** - Interactividad mejorada
 
+
 ---
 
 ## ⚙️ Validaciones Implementadas
@@ -205,15 +202,15 @@ Los usuarios se almacenan en `data/users.json` con el siguiente formato:
 ```json
 [
   {
-    "nombre": "Juan",
-    "apellido": "Pérez",
-    "email": "juan.perez@example.com",
-    "password": "Password123!"
+    "nombre": "Dave",
+    "apellido": "Villalta",
+    "email": "dave@test.com",
+    "password": "$Ucreativa2025!"
   }
 ]
 ```
 
-**Nota:** En una aplicación de producción, las contraseñas deberían estar hasheadas (bcrypt, scrypt, etc.)
+**Nota:** En una aplicación de producción, las contraseñas deberían estar hasheadas
 
 ---
 
@@ -222,28 +219,21 @@ Los usuarios se almacenan en `data/users.json` con el siguiente formato:
 ### El programa no inicia
 
 ```bash
-# Verificar que estás en el entorno virtual
-# Deberías ver (tarea3) al inicio de la línea
+# Verificar  entorno virtual 
+
 
 # Reinstalar dependencias
 pip install -r requirements.txt
 ```
 
-### Error de importación de módulos
 
-```bash
-# Asegúrate de estar en la carpeta raíz
 cd tarea3-tkinter
 
 # Ejecutar desde src/
 python src/main.py
 ```
 
-### No se guardan los usuarios
 
-- Verifica que existe la carpeta `data/`
-- Verifica permisos de escritura
-- El archivo `users.json` se crea automáticamente
 
 ---
 
@@ -259,25 +249,19 @@ python src/main.py
 - [x] Flujo de navegación correcto
 - [x] Validación de contraseñas (6 chars, mayúscula, minúscula, especial)
 
-### Puntos Extra Implementados ✅
 
-- [x] **GitHub:** Repositorio con commits significativos
-- [x] **Diseño Previo:** Mockup de las pantallas
-- [x] **README Completo:** Con documentación detallada
 
 ---
 
 ## 📸 Capturas de Pantalla
 
 ### Pantalla de Inicio de Sesión
-![Login](docs/screenshots/login.png)
+docs/Login.png
 
 ### Pantalla de Registro
-![Register](docs/screenshots/register.png)
-
+docs/register.png
 ### Pantalla Principal
-![Home](docs/screenshots/home.png)
-
+docs/home.png
 ---
 
 ## 🔒 Notas de Seguridad
@@ -303,16 +287,7 @@ python src/main.py
 
 ## 📄 Licencia
 
-Este proyecto es parte de un trabajo académico para la Universidad Creativa.
+Este proyecto es parte de un trabajo académico para la Universidad Creativa hecho por Dave Villalta 
 
 ---
 
-## 🙏 Agradecimientos
-
-- **Prof. Angelo Ortiz Vega** - Por la guía y enseñanza
-- **Universidad Creativa** - Por la formación en IA
-- **Compañeros de clase** - Por el apoyo y colaboración
-
----
-
-**© 2025 Universidad Creativa - Todos los derechos reservados**
